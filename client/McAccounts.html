@@ -1,0 +1,22 @@
+
+<template name="McAccounts">
+<h2>Accounts list</h2>
+  
+<table class="table table-striped">
+<thead>
+	<td>Address</td>
+	<td>Balance</td>
+	<td>Name</td>
+</thead>
+<tbody>
+ {{#each account}}
+  <tr>
+  	<td>{{address}}</td>
+	<td>{{balance}}</td>
+	<td>{{name}}</td>
+  </tr>
+ {{/each}}
+</tbody>
+</table>
+</template>
+

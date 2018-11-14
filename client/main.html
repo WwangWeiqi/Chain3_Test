@@ -2,24 +2,29 @@
   <title>Chain3_test</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<body class='container'>
+  <h1>MOAC_Chain3 Function Overview!</h1>
 
-  {{> hello}}
-  {{> info}}
+
+<table class="table table-striped">
+<tbody>
+  <tr>{{> coinbase}}</tr>
+  <tr>{{> blocknumber}}</tr>
+</tbody>
+</table>
+
+{{> Mcblocks}}
+{{> McAccounts}}
+
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="coinbase">
+  <td>Coinbase address: </td>
+  <td class='text-center'>{{CBaddr}}</td>
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+
+<template name='blocknumber'>
+  <td>BlockNumber: </td>
+  <td class='text-center'>{{blkNumber}}</td>
 </template>
